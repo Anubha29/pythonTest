@@ -1,4 +1,4 @@
-FROM alpine:3.1
+FROM ubuntu:12.04
 
 # Update
 RUN apk add --update python py-pip
