@@ -10,7 +10,8 @@ RUN pip install Flask
 #RUN pip install -r requirements.txt
 
 # Bundle app source
-COPY hello.py /hello.py
+COPY app.py /app.py
 
-EXPOSE  8000
-CMD ["python", "/hello.py", "-p 8000"]
+EXPOSE  5000
+#CMD ["python", "/app.py", "-p 5000"]
+CMD ["python", "app.py"]
